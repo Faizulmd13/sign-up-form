@@ -6,10 +6,33 @@
 .main {
   display: flex;
   height: 100vh;
+  width: 100vw;
+}
+
+.hero-left {
+  flex: 0 0 40%;
+  background: url(./newsletter-hero.png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form-container {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.form-container h2 {
+  margin-bottom: 12px;
 }
 
 .signup-form {
   width: 300px;
+  height: fit-content;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
