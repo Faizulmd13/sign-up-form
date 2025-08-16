@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Sign-up</title>
   </head>
   <body>
-    <main>
-      <div class="hero">
-        <img src="./newsletter-hero.png" alt="newsletter-hero image" />
-        <p>Sign-up Form</p>
-      </div>
-      <div class="signup-form">
-        <form action="">
+    <div class="main">
+      <div class="form-container">
+        <form class="signup-form">
           <p>
             <label for="first-name">First Name: </label>
             <input type="text" name="first-name" id="first-name" />
@@ -29,16 +27,18 @@
           </p>
 
           <p>
-            <label for="password">Enter Password: </label>
-            <input type="password" name="password" id="password" />
+            <label for="pw">Enter Password: </label>
+            <input type="password" name="password" id="pw" />
           </p>
 
           <p>
-            <label for="confirm">Confirm Password: </label>
-            <input type="password" name="confirm" id="confirm" />
+            <label for="pw-c">Confirm Password: </label>
+            <input type="password" name="confirm" id="pw-c" />
           </p>
+
+          <button type="submit">Submit</button>
         </form>
       </div>
-    </main>
+    </div>
   </body>
 </html>
